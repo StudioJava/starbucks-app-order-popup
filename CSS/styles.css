@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* CSS Document */
+html, html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Gotham, Helvetica Neue, Helvetica, Arial, " sans-serif";
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    padding: 32px 0px;
+    display: block;
+    text-align: center;
+    flex-direction: column;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.style-logo {
+    margin: 0 auto 20px;
+    width: 75px;
+}
+nav ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+nav li {
+    padding: 5px
+}
+nav ul li a {
+    text-decoration: none;
+    color: #2F322A;
+    text-transform: uppercase;
+    padding: 8px;
+}
+/**********Icons*/
+i {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    -webkit-transition-duration: .5s;
+}
+i:hover {
+    transform: rotate(360deg);
+    background-color: #aceeff
+}
+.previewArea{
+	padding: 20px 50px;
+	text-align: center;
+	letter-spacing: 2px;
+	
+}
+/*form*/
+#form {
+    border-radius: 5px;
+    box-shadow: 10px 2px 70px 1px black;
+    color: white;
+    text-align: left;
+    background-color: rgba(53,88,113,1.00);
+    /* [disabled]max-width: 90%;
+*/
+	width: 90%;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+.row {
+    max-width: 400px;
+    margin: 0 auto;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="tel"], textarea, select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+label, legend {
+    display: block;
+    margin-bottom: 8px;
+}
+fieldset {
+    border: none;
+}
+.wrap {
+	text-align: center;
+}
+button {
+	
+    font-weight: 300;
+    padding-top: 11px;
+    padding-right: 11px;
+    padding-left: 11px;
+    padding-bottom: 11px;
+    color: #FFF;
+    background-color: #6e25d4;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 10px;
+    width: 60%;
+    border: 1px solid #310F5F;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+label.light {
+    font-weight: 300;
+    margin-left: 5px;
+}
+input[type="checkbox"] + label, input[type="radio"] + label {
+    font-weight: 300;
+    font-size: .85em;
+    display: inline;
+    padding-left: 5px;
+}
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+    font-weight: bolder;
+	letter-spacing: 1px;
+	
+}
+input[placeholder="requred"],input[placeholder=""] {
+    text-align: right;
+}
+input[placeholder="requred"]:focus {
+    text-align: left;
+}
+input[placeholder="requred"]:active {
+    text-align: left;
+    color: red;
+}
+/*UI elements states pseudo classes------------------*/
+
+input:focus, textarea:focus {
+    background-color: #EAE0A8;
+}
+input[id="zip-code"] {
+    width: 50%;
+}
+#copyright {
+    text-align: center;
+}
+
+
+/***************************TABLET VIEW*/
+@media(min-width:780px) {
+body {
+    max-width: 820px;
+}
+.main-nav, ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.style-logo {
+    width: 120px;
+}
+header {
+    justify-content: space-around;
+}
+}
+
+/***************************DESKTOP VIEW*/
+@media(min-width:1080px) {
+}
+
